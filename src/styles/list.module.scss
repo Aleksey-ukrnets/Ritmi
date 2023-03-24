@@ -1,0 +1,51 @@
+.list {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  @media (max-width: 350px) {
+    flex-direction: column;
+  }
+  &.col {
+    flex-direction: column;
+    gap: 0;
+  }
+  .first,
+  .second {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    @media (max-width: 350px) {
+      gap: 15px;
+    }
+    .textBlock {
+      display: flex;
+      align-items: flex-start;
+      .text {
+        font-family: "Roboto-Regular", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 35px;
+        color: #ffffff;
+        max-width: 400px;
+        margin-top: 8px;
+        @media (max-width: 1440px) {
+          font-size: 20px;
+          line-height: 19px;
+        }
+        @media (max-width: 1024px) {
+          font-size: 15px;
+          line-height: 16px;
+        }
+        @media (max-width: 768px) {
+        }
+       
+        
+        &.size {
+          max-width: 555px;
+        }
+      }
+    }
+  }
+}

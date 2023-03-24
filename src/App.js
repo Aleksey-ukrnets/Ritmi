@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Challenge from "./components/Challenge";
+import Header from "./components/Header";
+import PlayGame from "./components/PlayGame";
+import light from './assets/light.svg'
+import Cards from "./components/Cards";
+import FaqBlock from "./components/FAQ/FaqBlock";
+import Footer from "./components/Footer";
+import DancePlay from "./components/DancePlay";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <Header />
+      <PlayGame />
+      <DancePlay />
+      <Challenge />
+      <Cards />
+      <FaqBlock />
+      <Footer />
+      <img src={light} alt="lightIcon" className="light light1" />
+      <img src={light} alt="lightIcon" className="light light2" />
+      <img src={light} alt="lightIcon" className="light light3" />
     </div>
   );
 }

@@ -1,0 +1,283 @@
+.playContainer {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: top 45px left;
+  overflow: hidden;
+  @media (max-width: 1440px) {
+    background-size: 120%;
+    background-position: top 155px left;
+  }
+  .block {
+    @media (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 50px;
+    }
+    .info {
+      margin-top: 255px;
+      padding-left: 140px;
+      max-width: 850px;
+      @media (max-width: 1440px) {
+        margin-top: 192px;
+        padding-left: 120px;
+        max-width: 590px;
+      }
+      @media (max-width: 1224px) {
+        margin-top: 136px;
+        padding-left: 86px;
+        max-width: 450px;
+      }
+      @media (max-width: 768px) {
+        margin-top: 100px;
+        padding-left: 65px;
+        max-width: 330px;
+      }
+      @media (max-width: 700px) {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 500px;
+        margin-top: 0;
+      }
+      @media (max-width: 450px) {
+        padding: 0 14px;
+      }
+      .title {
+        // font-family: "Roboto Flex", sans-serif;
+        font-style: italic;
+        font-weight: 900;
+        font-size: 112.175px;
+        line-height: 131px;
+        color: #ffffff;
+        @media (max-width: 1440px) {
+          font-size: 82px;
+          line-height: 96px;
+        }
+        @media (max-width: 1224px) {
+          font-size: 60px;
+          line-height: 70px;
+        }
+        @media (max-width: 768px) {
+          font-size: 45px;
+          line-height: 53px;
+        }
+        @media (max-width: 450px) {
+          font-size: 34px;
+          line-height: 40px;
+        }
+      }
+      .desc {
+        @media (max-width: 700px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .first,
+        .second {
+          font-family: "Roboto-Regular", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 40.075px;
+          line-height: 56px;
+          color: #ffffff;
+          @media (max-width: 1440px) {
+            font-size: 35px;
+            line-height: 41px;
+          }
+          @media (max-width: 1224px) {
+            font-size: 25px;
+            line-height: 29px;
+          }
+          @media (max-width: 768px) {
+            font-size: 20px;
+            line-height: 23px;
+          }
+          @media (max-width: 700px) {
+            text-align: center;
+          }
+          @media (max-width: 450px) {
+            font-size: 19.2219px;
+          }
+        }
+        .second {
+          margin: 36px 0;
+          @media (max-width: 1440px) {
+            margin: 28px 0;
+          }
+          @media (max-width: 1024px) {
+            margin: 20px 0;
+          }
+          @media (max-width: 768px) {
+            margin: 0px 0 20px 0;
+          }
+          @media (max-width: 450px) {
+          }
+        }
+      }
+    }
+    .icon {
+      position: absolute;
+      right: 0;
+      top: 250px;
+      @media (max-width: 1640px) {
+        top: 350px;
+        img {
+          width: 1258.96px;
+          height: 707.74px;
+        }
+      }
+      @media (max-width: 1440px) {
+        top: 250px;
+      }
+      @media (max-width: 1284px) {
+        top: 250px;
+        img {
+          width: 890.01px;
+          height: 500.33px;
+        }
+      }
+      @media (max-width: 1024px) {
+        width: 80%;
+        // display: none;
+      }
+      @media (max-width: 800px) {
+        img {
+          width: 780px;
+          height: 438px;
+        }
+      }
+      @media (max-width: 700px) {
+        width: 100%;
+        position: relative;
+        right: 100px;
+        top: 20px;
+        order: 1;
+        img {
+          width: 780px;
+          height: 438px;
+        }
+      }
+      @media (max-width: 450px) {
+        right: 130px;
+        img {
+          width: 665.72px;
+          height: 374.24px;
+        }
+      }
+    }
+  }
+  .experience {
+    display: flex;
+    align-items: center;
+    gap: 151px;
+    margin-top: 410px;
+    padding: 0 170px;
+    @media (max-width: 1440px) {
+      margin-top: 400px;
+      padding: 0 170px 0 130px;
+      gap: 114px;
+    }
+    @media (max-width: 1024px) {
+      padding: 0 126px 0 94px;
+      gap: 77px;
+    }
+    @media (max-width: 768px) {
+  
+      padding: 0 70px 0 42px;
+      gap: 40px;
+    }
+    @media (max-width: 700px) {
+      margin-top: 100px;
+      padding: 0 14px;
+    }
+    @media (max-width: 450px) {
+      margin-top: 70px;
+      padding: 0 14px;
+      gap: 5px;
+    }
+    .left {
+      img {
+        @media (max-width: 1440px) {
+          width: 339.5px;
+          height: 775.04px;
+        }
+        @media (max-width: 1024px) {
+          width: 240.01px;
+          height: 547.91px;
+        }
+        @media (max-width: 768px) {
+          width: 179.52px;
+          height: 409.83px;
+        }
+        @media (max-width: 450px) {
+          display: none;
+          width: 159px;
+          height: 363px;
+        }
+      }
+    }
+    .right {
+      .titleExp {
+        font-family: "Roboto Flex", sans-serif;
+        font-style: italic;
+        font-weight: 800;
+        font-size: 80px;
+        line-height: 94px;
+        text-transform: uppercase;
+        max-width: 800px;
+        color: #ffffff;
+        @media (max-width: 1440px) {
+          font-size: 60px;
+          line-height: 70px;
+        }
+        @media (max-width: 1024px) {
+          font-size: 43px;
+          line-height: 50px;
+        }
+        @media (max-width: 768px) {
+          font-size: 35px;
+          line-height: 41px;
+        }
+        @media (max-width: 450px) {
+          font-size: 34px;
+          line-height: 40px;
+          text-align: center;
+        }
+      }
+      .descExp {
+        font-family: "Roboto Flex", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        color: #ffffff;
+        max-width: 700px;
+        margin: 30px 0;
+        @media (max-width: 1440px) {
+          font-size: 28px;
+          line-height: 33px;
+        }
+        @media (max-width: 1024px) {
+          font-size: 20px;
+          line-height: 23px;
+        }
+        @media (max-width: 768px) {
+          font-size: 20px;
+          line-height: 23px;
+        }
+        @media (max-width: 450px) {
+          font-size: 15px;
+          line-height: 18px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

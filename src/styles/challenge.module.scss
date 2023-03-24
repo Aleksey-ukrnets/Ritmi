@@ -1,0 +1,83 @@
+.challengeContainer {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  gap: 102px;
+  padding: 0 138px 0 116px;
+  @media (max-width: 1024px) {
+    padding: 0 70px 0 97px;
+    gap: 10px;
+  }
+  @media (max-width: 768px) {
+    padding: 0 84px 0 42px;
+  }
+  @media (max-width: 450px) {
+    padding: 0 40px;
+  }
+  @media (max-width: 450px) {
+    padding:  0 14px;
+  }
+  .second{
+    @media (max-width: 1540px) {
+      img {
+        width: 535px;
+        height: 965px;
+      }
+    }
+    @media (max-width: 1224px) {
+      img {
+        width: 365px;
+        height: 657px;
+      }
+    }
+    @media (max-width: 768px) {
+      img {
+        width: 297px;
+        height: 535px;
+      }
+    }
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+  .first {
+    @media (max-width: 650px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+   
+    .title {
+      margin-bottom: 20px;
+      font-family: "Roboto Flex";
+      font-style: italic;
+      font-weight: 900;
+      font-size: 85px;
+      line-height: 100px;
+      color: #ffffff;
+      @media (max-width: 1440px) {
+        font-size: 60px;
+        line-height: 70px;
+      }
+      @media (max-width: 1024px) {
+        font-size: 43px;
+        line-height: 50px;
+      }
+      @media (max-width: 768px) {
+        font-size: 35px;
+        line-height: 41px;
+      }
+      @media (max-width: 450px) {
+        font-size: 34px;
+        line-height: 40px;
+        text-align: center;
+      }
+    }
+    .margin {
+        margin-top: 35px;
+    }
+
+  }
+  
+}
