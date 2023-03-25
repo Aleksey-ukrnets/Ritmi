@@ -194,6 +194,7 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         gap: 40px;
+        
         @media (max-width: 1440px) {
           gap: 25px;
           max-width: 300px;
