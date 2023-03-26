@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, {  useEffect, useRef, useState } from "react";
 import { posts } from "./Info";
 import Post from "./Post";
 import css from "../../styles/faq.module.scss";
@@ -19,6 +19,7 @@ export default function FaqBlock({getOffsetHeight}) {
  
   useEffect(() => {
     getOffsetHeight(ref.current.offsetTop);
+    // eslint-disable-next-line
   }, [ref]);
 
   return (

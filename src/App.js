@@ -12,13 +12,13 @@ function App() {
     let win = window.open(url, '_blank');
     win.focus();
   }
-  const [offsetAbout, setOffsetAbout] = useState()
-  const [offsetPlay, setOffsetPlay] = useState()
+  // const [offsetAbout, setOffsetAbout] = useState()
+  // const [offsetPlay, setOffsetPlay] = useState()
   const [offsetFaq, setOffsetFaq] = useState()
 
   const allScrollHeight = {
-    about: offsetAbout,
-    play: offsetPlay,
+    // about: offsetAbout,
+    // play: offsetPlay,
     faq: offsetFaq,
     
   };

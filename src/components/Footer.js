@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useState } from "react";
 import css from "../styles/footer.module.scss";
 import CommonBtn from "../ui/CommonBtn";
 
@@ -39,7 +39,7 @@ export default function Footer({ allScrollHeight }) {
       body: JSON.stringify({ email }),
     };
     
-    const response = await fetch(`${process.env.URL}netlify/functions/index.js`, options).then(
+    await fetch(`${process.env.URL}netlify/functions/index.js`, options).then(
       (error) => console.log(error)
     );
   }
