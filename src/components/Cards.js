@@ -5,28 +5,29 @@ import tiktok from "../assets/tiktokCard.svg";
 
 import css from "../styles/cards.module.scss";
 import CommonBtn from "../ui/CommonBtn";
-export default function Cards() {
+export default function Cards({openInNewTab}) {
+ 
   const cards = [
     {
       text: "Discord",
       desc: "Connect with like-minded most active & trendy people",
       img: ds,
       btnText: "join",
-      handler: () => {},
+      handler: () => openInNewTab('https://discord.gg/S9T4hUAGmE'),
     },
     {
       text: "twitter ",
       desc: "Keep up with the latest news",
       img: twit,
       btnText: "SUBSCRIBE ",
-      handler: () => {},
+      handler: () => openInNewTab('https://twitter.com/Ritmi_App'),
     },
     {
       text: "tiktok ",
       desc: "Become a trendsetter and participate in Ritmi Challenges",
       img: tiktok,
       btnText: "SUBSCRIBE ",
-      handler: () => {},
+      handler: () => openInNewTab('https://www.tiktok.com/@ritmi_app'),
     },
   ];
   return (
@@ -39,7 +40,7 @@ export default function Cards() {
               <img src={el.img} alt="icon" />
             </div>
             <div className={css.desc}>{el.desc}</div>
-            <CommonBtn className={css.btnCard} text={el.btnText} />
+            <CommonBtn className={css.btnCard} text={el.btnText} handler={el.handler} />
           </div>
         ))}
       </div>

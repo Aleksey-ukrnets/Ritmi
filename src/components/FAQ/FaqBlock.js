@@ -1,18 +1,28 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { posts } from "./Info";
 import Post from "./Post";
 import css from "../../styles/faq.module.scss";
 import icon from "../../assets/char_blue.png";
-export default function FaqBlock() {
+
+export default function FaqBlock({getOffsetHeight}) {
+
+  let ref = useRef(null)
+
   const [clicked, setClicked] = useState(false);
+
   const toggle = (index) => {
     if (clicked === index) {
       return setClicked(null);
     }
     setClicked(index);
   };
+ 
+  useEffect(() => {
+    getOffsetHeight(ref.current.offsetTop);
+  }, [ref]);
+
   return (
-    <div className={css.faq}>
+    <div className={css.faq} ref={ref}>
       <div className={css.wrapper}>
         <div className={css.list}>
           <div className={css.postsContainer}>
@@ -29,7 +39,7 @@ export default function FaqBlock() {
                 />
               );
             })}
-            <div className={css.btn}>See more</div>
+            {/* <div className={css.btn}>See more</div> */}
           </div>
           <img src={icon} alt="icon" />
         </div>

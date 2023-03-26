@@ -39,6 +39,8 @@ code {
   }
 }
 .btn {
+  position: relative;
+  z-index: 100;
   width: 301px;
   height: 101px;
   background: #c4ff1c;

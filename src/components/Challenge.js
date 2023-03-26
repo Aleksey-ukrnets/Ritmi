@@ -5,7 +5,7 @@ import css from "../styles/challenge.module.scss";
 import CommonBtn from "../ui/CommonBtn";
 import List from "../ui/List";
 
-export default function Challenge() {
+export default function Challenge({openInNewTab}) {
   const width = useWindowWidth();
   return (
     <div className={css.challengeContainer}>
@@ -27,7 +27,7 @@ export default function Challenge() {
         {width <= 450 ? (
           ""
         ) : (
-          <CommonBtn className={css.margin} text={"join challenge"} />
+          <CommonBtn className={css.margin} text={"join challenge"} handler={()=> openInNewTab('https://discord.gg/S9T4hUAGmE')} />
         )}
       </div>
       <div className={css.second}>

@@ -7,8 +7,8 @@ import bg from "../assets/bg.svg";
 import List from "../ui/List";
 import { useWindowWidth } from "@react-hook/window-size";
 
-export default function PlayGame() {
-  const onlyWidth = useWindowWidth()
+export default function PlayGame({ openInNewTab }) {
+  const onlyWidth = useWindowWidth();
   return (
     <div
       className={css.playContainer}
@@ -17,7 +17,7 @@ export default function PlayGame() {
       <div className="progressBar_container">
         <div className="progressBar">
           <div className="progress">
-            progress bar 2000 members &nbsp;<span> simple & vip</span>
+            Available places: &nbsp;<span> 1800 slots + 200 VIP</span>
           </div>
         </div>
       </div>
@@ -31,7 +31,11 @@ export default function PlayGame() {
               win prizes!
             </p>
           </div>
-          <CommonBtn text={"join challenge"} className={onlyWidth > 1441 && "large"} />
+          <CommonBtn
+            text={"join challenge"}
+            className={onlyWidth > 1441 && "large"}
+            handler={() => openInNewTab("https://discord.gg/S9T4hUAGmE")}
+          />
         </div>
         <div className={css.icon}>
           <img src={topImg} alt="topImg" />
@@ -53,15 +57,14 @@ export default function PlayGame() {
               "Attend PVP or Coop Dance Battles",
             ]}
             list2={[
-               " Join or build a Dance CLubs with your friends online & offline.",
-                "Share your Dance Videos on social media.",
-                "Design personal track levels."
+              " Join or build a Dance CLubs with your friends online & offline.",
+              "Share your Dance Videos on social media.",
+              "Design personal track levels.",
             ]}
             gap={onlyWidth > 700 && 50}
           />
         </div>
       </div>
-     
     </div>
   );
 }
