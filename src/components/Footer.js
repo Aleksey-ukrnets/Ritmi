@@ -39,7 +39,7 @@ export default function Footer({ allScrollHeight }) {
       body: JSON.stringify({ email }),
     };
     
-    const response = await fetch("public/.netlify/functions/index.js", options).then(
+    const response = await fetch(`${process.env.URL}netlify/functions/index.js`, options).then(
       (error) => console.log(error)
     );
   }

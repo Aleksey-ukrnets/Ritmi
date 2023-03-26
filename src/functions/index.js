@@ -1,5 +1,5 @@
 const { Client, LogLevel } = require('@notionhq/client');
-const fetch = require('node-fetch') 
+// const fetch = require('node-fetch') 
 
 const { NOTION_API_TOKEN, NOTION_DATABASE_ID } = process.env;
 
@@ -31,7 +31,7 @@ async function addEmail(email) {
 async function senWaitlistThanksEmail(email) {
 
     await fetch(
-        `${process.env.URL}/.netlify/functions/emails/waitlist_thanks`,
+        `${process.env.URL}/netlify/functions/emails/waitlist_thanks`,
         {
             headers: {
                 "netlify-emails-secret": process.env.NETLIFY_EMAILS_SECRET,
