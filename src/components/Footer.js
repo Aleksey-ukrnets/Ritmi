@@ -32,6 +32,7 @@ export default function Footer({ allScrollHeight }) {
   async function registerUser() {
     const headers = new Headers();
     headers.append("Content-Type", "application/json");
+    headers.append('Access-Control-Allow-Origin','*')
 
     const options = {
       method: "POST",
@@ -39,7 +40,7 @@ export default function Footer({ allScrollHeight }) {
       body: JSON.stringify({ email }),
     };
     
-    const response = await fetch(`${'https://darling-cupcake-dc5db4.netlify.app/'}netlify/functions/index.js`, options).then(
+    const response = await fetch(`${'https://darling-cupcake-dc5db4.netlify.app'}netlify/functions/index.js`, options).then(
       (error) => console.log(error)
     );
     console.log(response)
